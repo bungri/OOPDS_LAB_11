@@ -86,8 +86,7 @@ void DepthFirstSearch::showConnectivity(ofstream& fout)
 	}
 }
 
-void DepthFirstSearch::dfsTraversal(Vertex& v, Vertex& target, VertexList&
-	path)
+void DepthFirstSearch::dfsTraversal(Vertex& v, Vertex& target, VertexList& path)
 {
 	visit(v); // mark v as VISITED
 	if (v == target) { done = true; return; }
