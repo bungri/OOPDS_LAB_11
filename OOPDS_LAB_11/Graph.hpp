@@ -35,7 +35,8 @@ public:
 	{
 		friend ostream& operator<<(ostream& fout, Vertex v)
 		{
-			/*. . . . .*/
+			fout << "V" << setw(2) << setfill('0') << v.ID;
+
 			return fout;
 		}
 	public:
@@ -63,7 +64,7 @@ public:
 	{
 		friend ostream& operator<<(ostream& fout, Edge& e)
 		{
-			/*. . . . .*/
+			fout << "Edge(" << e.vrtx_1 << ", " << e.vrtx_2 << ", " << "d(" << setw(2) << e.distance << "))";
 			return fout;
 		}
 	public:
